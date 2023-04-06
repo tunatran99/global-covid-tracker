@@ -1,0 +1,125 @@
+.linechart {
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    .custom {
+        width: 70rem !important;
+        height: 31.25rem !important;
+    }
+
+    .recharts-legend-wrapper {
+        width: 100% !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+}
+
+.custom-tooltip {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1px 1rem;
+}
+
+.custom-tooltip p:nth-child(2) {
+    color: #6666fa96;
+}
+.custom-tooltip p:nth-child(3) {
+    color: #dd641396;
+}
+.custom-tooltip p:nth-child(4) {
+    color: #36ded1;
+}
+.custom-tooltip p:nth-child(5) {
+    color: #fa8181;
+}
+
+@media (width > 1440px) {
+    .linechart {
+        .custom {
+            width: 78% !important;
+            height: 33% !important;
+        }
+
+        .recharts-surface {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .recharts-legend-wrapper {
+            .recharts-default-legend {
+                .recharts-surface {
+                    width: 6vw !important;
+                    height: 6vh !important;
+                }
+
+                span {
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .linechart {
+        .custom {
+            width: 100% !important;
+            height: 1% !important;
+        }
+
+        .recharts-surface {
+            width: 100% !important;
+            height: 1% !important;
+        }
+
+        .recharts-legend-wrapper {
+            top: 95%;
+            .recharts-default-legend {
+                .recharts-surface {
+                    width: 4vw !important;
+                    height: 4vh !important;
+                }
+
+                span {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .linechart {
+        margin-top: 1rem;
+
+        .custom {
+            width: 100% !important;
+            height: 65vh !important;
+        }
+
+        .recharts-surface {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .recharts-tooltip-wrapper {
+            zoom: 40%;
+        }
+
+        .recharts-legend-wrapper {
+            .recharts-default-legend {
+                .recharts-surface {
+                    width: 6vw !important;
+                    height: 6vh !important;
+                }
+
+                span {
+                    font-size: 2.5vw;
+                }
+            }
+        }
+    }
+}

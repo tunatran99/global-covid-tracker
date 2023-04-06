@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+
+.container {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Be Vietnam', sans-serif;
+
+    .banner {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    .spinner-bootstrap {
+        display: block;
+        margin: auto;
+    }
+    
+    h1,
+    .status {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    }
+    h1, h3 {
+        text-align: center;
+    }
+    
+    h3 {
+        margin-bottom: 1rem !important;
+    }
+
+    .card-container {
+        margin-top: 3rem;
+
+        .data-collected {
+            display: flex;
+            justify-content: center;
+    
+            .status {
+                width: 15.625rem;
+                height: 5.625rem;
+                border-radius: 5px;
+                font-weight: 800;
+                font-size: 20px;
+                text-align: center;
+                padding-top: 5px;
+                line-height: 1.3em;
+    
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0 !important;
+                }
+    
+                &:nth-child(2) {
+                    margin-left: .5rem;
+                }
+    
+                &:nth-child(3) {
+                    margin-right: .5rem;
+                    margin-left: .5rem;
+                }
+            }
+    
+            #confirmed {
+                background-color: rgba(102, 102, 250, 0.589)
+            }
+    
+            #infected {
+                background-color: rgba(221, 100, 19, 0.589);
+            }
+    
+            #recovered {
+                background-color: rgba(109, 250, 179, 0.596)
+            }
+    
+            #death {
+                background-color: rgba(250, 129, 129, 0.486);
+            }
+        }
+    }
+}
+
+@media (width > 1440px) {
+    .container {
+        h3 {
+            font-size: 2vw;
+        }
+
+        .card-container {
+            .data-collected {
+                .status {
+                    width: 17%;
+                    height: 5%;
+                    font-size: 1.2vw;
+    
+                    p {
+                        font-size: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .container {
+        .card-container {
+            .data-collected {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 2rem;
+                column-gap: .5rem;
+        
+                .status {
+                    width: 100%;
+                    height: 100%;
+
+                    &:nth-child(2) {
+                        margin-left: 0;
+                    }
+    
+                    &:nth-child(3) {
+                        grid-column: 1 / 2;
+                        grid-row: 2/end;
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+    
+                    &:nth-child(4) {
+                        grid-row: 2/end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding: 1rem;
+
+        .banner {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-container {
+            .data-collected {
+                flex-flow: column;
+                .status {
+                    margin: 1.5vh 0 !important;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
