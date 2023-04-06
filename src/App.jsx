@@ -2,7 +2,7 @@ import React, { useEffect, useState, createContext } from 'react'
 import { fetchData } from './api/api'
 import Card from './components/Card'
 import Chart from './components/Chart'
-import CountryDropDown from './components/CountryDropdown'
+import CountryDropDown from './components/CountryDropDown'
 import banner from './assets/images/banner.png'
 import * as ReactBootstrap from 'react-bootstrap'
 
