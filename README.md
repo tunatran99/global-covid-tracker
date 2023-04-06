@@ -1,7 +1,7 @@
 # Covid19 Tracker
 
 ### Live Demo
-[https://example--create-react-app--examples--nort-kcwl.code.run](https://example--create-react-app--examples--nort-kcwl.code.run)
+[https://global-covid-tracker.vercel.app](https://global-covid-tracker.vercel.app)
 
 ## Features
 - Xem tổng số ca nhiễm, hồi phục và tử vong của từng nước và toàn thế giới.
@@ -11,6 +11,7 @@
 - React
 - Recharts
 - MaterialUI
+- SCSS
 
 ## Cloning this project into your local development 🚀
 Set up your local development environment by following these steps:
